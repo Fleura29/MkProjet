@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+rss_filter_plugin = rss_filter_plugin:RSSFilterPlugin

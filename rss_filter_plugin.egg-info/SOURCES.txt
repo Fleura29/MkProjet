@@ -1,0 +1,7 @@
+rss_filter_plugin.py
+setup.py
+rss_filter_plugin.egg-info/PKG-INFO
+rss_filter_plugin.egg-info/SOURCES.txt
+rss_filter_plugin.egg-info/dependency_links.txt
+rss_filter_plugin.egg-info/entry_points.txt
+rss_filter_plugin.egg-info/top_level.txt

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Dernières news</title>
+    <link>http://localhost:8000/rss</link>
+    <description>Les 5 dernières news</description>
+    <atom:link href="http://localhost:8000/rss" rel="self"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Wed, 03 Jul 2024 11:56:00 +0000</lastBuildDate>
+    <item>
+      <title>290125.md</title>
+      <link>http://localhost:8000/Informations/News/202501/290125/</link>
+    </item>
+    <item>
+      <title>060724.md</title>
+      <link>http://localhost:8000/Informations/News/202407/060724/</link>
+    </item>
+    <item>
+      <title>050724.md</title>
+      <link>http://localhost:8000/Informations/News/202407/050724/</link>
+    </item>
+    <item>
+      <title>040724.md</title>
+      <link>http://localhost:8000/Informations/News/202407/040724/</link>
+    </item>
+    <item>
+      <title>030724.md</title>
+      <link>http://localhost:8000/Informations/News/202407/030724/</link>
+    </item>
+  </channel>
+</rss>
