@@ -5,12 +5,12 @@ def inclure_contenu(fichier):
         return f.read()
 
 def lire_tous_les_fichiers_par_ordre_inverse(dossiers):
-    contenu_total = ""
+    contenu_total = """
+<!-- Ne pas modifier, généré automatiquement -->\n
+# Fil des news\n\n
+<a href='../../latest_news.xml' download='news.xml'>S'abonner au fil des news (flux RSS)</a>\n\n
+                    """
     
-    contenu_total += "<!-- Ne pas modifier, généré automatiquement -->\n"
-    contenu_total += "# Fil des news\n\n"
-    contenu_total += "<a href='../../latest_news.xml' download='news.xml'>S'abonner au fil des news (flux RSS)</a> \n\n"
-
     # Parcourir les dossiers dans l'ordre spécifié
     for dossier in dossiers:
         for racine, _, fichiers in os.walk(dossier):
@@ -18,7 +18,10 @@ def lire_tous_les_fichiers_par_ordre_inverse(dossiers):
             for nom_fichier in fichiers:
                 if nom_fichier.endswith('.md'):
                     chemin_fichier = os.path.join(racine, nom_fichier)
-                    contenu_total += inclure_contenu(chemin_fichier) + "\n\n"
+                    print(racine + ", " + nom_fichier)
+                    contenu_total += inclure_contenu(chemin_fichier)
+                    clean_racine = racine.split('docs/Informations/')[1]
+                    contenu_total += f" [Lien]({clean_racine}/{nom_fichier})\n\n"
 
     return contenu_total
 

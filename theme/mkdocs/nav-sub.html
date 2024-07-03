@@ -1,0 +1,16 @@
+{%- if not nav_item.children %}
+<li>
+    <a href="{{ nav_item.url|url }}" class="dropdown-item{% if nav_item.active %} active" aria-current="page{% endif %}">{{ nav_item.title }}</a>
+</li>
+{%- else %}
+  <li class="nav-item dropend">
+    <a href="#" class="dropdown-toggle dropdown-item">{{ nav_item.title }}</a>
+    <div class="dropdown-menu">
+      <ul>
+        {%- for nav_item in nav_item.children %}
+            {% include "nav-sub.html" %}
+        {%- endfor %}
+      </ul>
+    </div> 
+  </li>
+{%- endif %}

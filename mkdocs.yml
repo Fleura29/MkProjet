@@ -2,7 +2,8 @@ site_name: Mon site
 site_url: http://localhost:8000/
 
 theme:
-  name: 'mkdocs'
+  name: mkdocs
+  custom_dir: theme/mkdocs
   color_mode: 'auto' 
   user_color_mode_toggle: true
 
@@ -22,7 +23,6 @@ nav:
       - AURA: Accueil/Partenaires/AURA.md
   - Informations:
     - News: Informations/News.md
-    - News25: Informations/News/202501/290125.md
     - Les absences des opérateurs: Informations/Absences.md
     - Les arrêts prévus: Informations/Arrets.md
     - Supports :
