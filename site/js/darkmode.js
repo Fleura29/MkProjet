@@ -33,12 +33,18 @@ function updateModeToggle(mode) {
 function updateNavbarTheme(mode) {
     // Update the navbar theme based on the mode
     var container = document.querySelector('#menu');
+    const logo_cbp_light = document.querySelector("#logo_cbp_light");
+    const logo_cbp_dark = document.querySelector("#logo_cbp_dark");
     if (mode == 'dark') {
         container.classList.remove('menu-light');
         container.classList.add('menu-dark');
+        logo_cbp_light.style.display = "none";
+        logo_cbp_dark.style.display = "block";
     } else {
         container.classList.remove('menu-dark');
         container.classList.add('menu-light');
+        logo_cbp_light.style.display = "block";
+        logo_cbp_dark.style.display = "none";
     }
 }
 

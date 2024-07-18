@@ -18,32 +18,80 @@ plugins:
 nav:
   - Accueil: 
     - Actualités PSMN: Accueil/Actualites.md
+    - Bureau des Correspondants: Accueil/Bureau.md
+    - Evènements CBP: Accueil/Evenements.md
+    - Liens: Accueil/Liens.md
+    - Services: Accueil/Services.md
     - Partenaires:
-      - ENS: Accueil/Partenaires/ENS.md
-      - AURA: Accueil/Partenaires/AURA.md
+      - Les laboratoires ENS Lyon: Accueil/Laboratoires/ENS.md
+      - Les laboratoires Udl: Accueil/Laboratoires/Udl.md
+      - Les laboratoires région AURA: Accueil/Laboratoires/AURA.md
+      - Les Centres de Calculs: Accueil/Laboratoires/Cdc.md
+      - Les partenaires privés: Accueil/Laboratoires/PP.md
   - Informations:
-    - News: Informations/News.md
-    - Les absences des opérateurs: Informations/Absences.md
+    - Fil des news: Informations/News.md
     - Les arrêts prévus: Informations/Arrets.md
-    - Supports :
-      - RES: Informations/Supports/RE.md
-      - RIC: Informations/Supports/RIC.md
+    - Les absences des opérateurs: Informations/Absences.md
+    - Statisiques d'utilisation: Informations/StatsUtil.md
+    - Calendrier des évolutions: Informations/Calendrier.md
+    - Adaptation aux nouveaux besoins: Informations/Adaptation.md
+    - Pour calculer: Informations/Calculer.md
+    - F.A.Q.: Informations/FAQ.md
+    - Réalisations et solutions: 
+      - Logiciels: Informations/Realisations/Logiciels.md
+      - Outils système: Informations/Realisations/Outils.md
+      - Matériels: Informations/Realisations/Materiel.md
+      - Réseaux: Informations/Realisations/Reseaux.md
+      - Plateaux techniques: Informations/Realisations/Plateaux.md
+    - Classifications par activités: 
+      - Etudes: Informations/Classification/Etudes.md
+      - Intégration: Informations/Classification/Integration.md
+      - Qualification: Informations/Classification/Qualification.md
   - Plateformes:
     - Data Center: Plateformes/DataCenter.md
+    - Documentations: https://www.ens-lyon.fr/PSMN/Documentation/
+    - Les clusters et les serveurs: Plateformes/ClustersServeurs.md
+    - Equipements informatique: Plateformes/EquipInfo.md 
+    - Projet d'infrastructure: Plateformes/ProjetsInfra.md
+    - Supports: 
+      - Recherche en calcul scientifique: Plateformes/Supports/RCS.md
+      - Recherche en informatique scientifique: Plateformes/Supports/RIS.md
+      - En humanités numériques: Plateformes/Supports/HN.md
+      - Administratif, financier et juridique: Plateformes/Supports/AFJ.md
   - Formation:
     - Formation: Formation/Formation.md
     - Propositions de stage: Formation/Stage.md
   - Science:
-    - Projets: Science/Projets.md
     - Publications: Science/Publications2024.md
-    - Publications2014: Science/Publications2014.md
-    - Publications2015: Science/Publications2015.md
-    - Sidus: Science/SidusFR.md 
+    - Thèses: Science/Theses.md
+    - Créations multimédia: Science/CreationsMulti.md
+    - Chercheurs associés: Science/Chercheurs.md
+    - Projets scientifiques + Projets utilisateurs: Science/Projets.md
   - Animation:
+    - Evènements scientifiques: Animation/EvenementsScient.md
+    - Services proposés aux organisateurs: Animation/Services.md
     - Projets d'animation scientifique: Animation/PAS.md
+    - Appel à projets: Animation/Appels.md
+    - Médias: Animation/Media.md
+    - Ateliers HM / PN-SHS:
+      - Humanités Numériques (AHN): Animation/Ateliers/AHN.md
+      - Biologie Computationnelle (ABC): Animation/Ateliers/ABC.md
+      - Chimie Théorique: Animation/Ateliers/ACT.md
+      - Pratiques Numériques en SHS (ED483): https://groupes.renater.fr/wiki/apn-shs/index
+      - Guides et Tutoriels: Animation/Ateliers/Guides.md
   - Réseaux:
-    - CECAM: Reseaux/CECAM.md
+    - CECAM-FR-RA: Reseaux/CECAM.md
+    - FLMSN: Reseaux/FLMSN.md
+    - IXXI: Reseaux/IXXI.md
+    - Pôle Bioinformatique Lyonnais: Reseaux/PBIL.md
+    - CIRA Calcul intensif en Rhône-Alpes: Reseaux/CIRA.md
+    - GDR Calcul: Reseaux/GDR.md
+    - LyonCalcul: Reseaux/LC.md
+    - Sierra: Reseaux/Sierra.md
   - Contacts:
+    - Accès aux sites: Contacts/Acces.md
+    - Équipe / Staff: Contacts/Equipe.md
+    - Calendrier & réservations de la salle TP: Contacts/Calendrier.md
     - Formulaires: Contacts/Formulaires.md
 
 markdown_extensions:
@@ -83,4 +131,3 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets
   - pymdownx.keys
-

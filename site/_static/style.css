@@ -30,7 +30,6 @@ body{
     }
 }
 
-
 @media screen and (min-width: 576px) and (max-width: 768px){
     .orange-border {
         width: 10px; 
@@ -43,12 +42,14 @@ body{
     }
 }
 
+a{
+    color: rgba(13,110,253);
+}
+
 /* header */
 
 img.logo{
     width: 240px;
-    background-color: #fff;
-    border-radius: 50px;
 }
 
 .menu-light{
@@ -76,7 +77,6 @@ img.logo{
     }
     .menu-dark{
         border-bottom: 2px solid #fff !important;
-        padding-bottom: 1rem;
     }
     .dropend:hover > .dropdown-menu{
         display: block;
@@ -142,7 +142,7 @@ li > a.dropdown-item{
     font-weight: bold;
 }
 
-/* Titre */
+/*---------- Titre ----------*/
 
 h1{
     font-size: 1.7rem;
@@ -176,7 +176,7 @@ h4{
     font-weight: bold;
 }
 
-/* Table */ 
+/*---------- Table ----------*/ 
 
 table{
     margin: 0 auto 10px;
@@ -233,21 +233,13 @@ th, td{
     font-size: 13px;
 }
 
-.textarea{
-    height: 100px; border-color: #E69645;
+.btn-submit, .textarea{
+    border-color: #E69645;
 }
 
 .checkbox{
     border: solid #E69645 1px;
     cursor: pointer;
-}
-
-.btn-submit{
-    border-color: #E69645;
-}
-
-.row-form{
-    margin: 0 5px;
 }
 
 .btn:hover{
