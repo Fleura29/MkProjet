@@ -2,10 +2,10 @@
 
 [Calendrier de disponibilité de la salle de TP numériques du CBP](#) 
 
-<div class="container d-inline-block bg-body-secondary py-3 mb-3 rounded fs-13 text-center">
+<div class="note note-info">
     N'oubliez pas de consulter le <a href="#">calendrier de disponibilité de la salle</a> avant de réserver
 </div>
-    
+
 <div class="border-form mb-3">
     <form id="userForm" method="post" class="mx-2 px-3" data-nom="salleTP">
         <div class="row ">
@@ -72,13 +72,13 @@
             <label for="textAreaAutre">Autres renseignements</label>
         </div>
         <p class="mt-3 fs-12"><i>Les champs marqués d'une étoile (*) sont obligatoires !</i></p>
-        <div class="container text-center bg-warning-subtle py-3 mb-3 rounded fs-13">
+        <div class="container note note-important mb-3 w-100">
             Toute réservation dans la salle de formation suppose l'acceptation et le respect 
             des <a href="../../../Plateformes/Autres/Conditions.html">Conditions Générales d'Utilisation</a>.
         </div>
         <div class="d-flex justify-content-center">
-            <label class="me-1" for="human" id="human-question"></label>
-            <input id="human-answer" type="text"/> 
+            <label class="me-2" for="human" id="human-question"></label>
+            <input class="captcha" id="human-answer" type="text"/> 
         </div>
         <div id="bloc" class="text-center"></div>
         <script src="../../../_static/Formulaires/Formulaires.js"></script>

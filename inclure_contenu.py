@@ -18,7 +18,6 @@ def lire_tous_les_fichiers_par_ordre_inverse(dossiers):
             for nom_fichier in fichiers:
                 if nom_fichier.endswith('.md'):
                     chemin_fichier = os.path.join(racine, nom_fichier)
-                    print(racine + ", " + nom_fichier)
                     contenu_total += inclure_contenu(chemin_fichier)
                     clean_racine = racine.split('docs/Informations/')[1]
                     contenu_total += f" [Lien]({clean_racine}/{nom_fichier})\n\n"

@@ -25,7 +25,7 @@ Pour une présentation du PSMN et du CBP, veuillez consulter [cette page](../ind
 
 Voir [la page dédiée aux formations](#)
 
-<div class="container d-inline-block bg-danger-subtle p-3 rounded fs-13 text-center mb-3">
+<div class="note note-warning">
     Les formations PSMN sont proposées en présentiel (ou visioconférence), en général, le mardi après-midi ou le jeudi après-midi, à la demande des utilisateurs. <br>
     <strong>Inscriptions</strong> : <a href="mailto:cerasela.iliana.calugaru@ens-lyon.fr"> Cerasela Calugaru </a>
 </div>

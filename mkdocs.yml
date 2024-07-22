@@ -12,11 +12,12 @@ extra_css:
 
 plugins:
   - search
-  - rss
   - include-markdown
+  - awesome-pages
 
 nav:
   - Accueil: 
+    - Sidus: Science/SidusFR.md
     - Actualités PSMN: Accueil/Actualites.md
     - Bureau des Correspondants: Accueil/Bureau.md
     - Evènements CBP: Accueil/Evenements.md
@@ -26,7 +27,7 @@ nav:
       - Les laboratoires ENS Lyon: Accueil/Laboratoires/ENS.md
       - Les laboratoires Udl: Accueil/Laboratoires/Udl.md
       - Les laboratoires région AURA: Accueil/Laboratoires/AURA.md
-      - Les Centres de Calculs: Accueil/Laboratoires/Cdc.md
+      - Les Centres de Calculs: Accueil/Laboratoires/CdC.md
       - Les partenaires privés: Accueil/Laboratoires/PP.md
   - Informations:
     - Fil des news: Informations/News.md
@@ -95,6 +96,8 @@ nav:
     - Formulaires: Contacts/Formulaires.md
 
 markdown_extensions:
+  - admonition
+  - codehilite
   - pymdownx.extra
   - pymdownx.superfences
   - pymdownx.inlinehilite
