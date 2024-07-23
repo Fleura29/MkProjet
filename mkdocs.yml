@@ -17,7 +17,7 @@ plugins:
 
 nav:
   - Accueil: 
-    - Sidus: Science/SidusFR.md
+    - Sidus: Accueil/SidusFR.md
     - Actualités PSMN: Accueil/Actualites.md
     - Bureau des Correspondants: Accueil/Bureau.md
     - Evènements CBP: Accueil/Evenements.md

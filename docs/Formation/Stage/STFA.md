@@ -4,7 +4,7 @@ Stage de traduction français-anglais
 Sujet: Segmentation d'images biologiques 3D en utilisant du calcul parallèle
 ----------------------------------------------------------------------------
 
-![Image drapeaux français et anglais](../../_static/equipe/eqltlanguages.png){: .img-fluid .img-float .wi-70px}
+![Image drapeaux français et anglais](../../_static/equipe/eqltlanguages.png){: .img-float width=70px}
 
 Stagiaire H/F - 1 mois <br> 
 Temps de travail : Temps plein <br> 

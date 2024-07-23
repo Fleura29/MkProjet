@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="http://localhost:8000/Science/SidusFR/">
+        <link rel="canonical" href="http://localhost:8000/Accueil/SidusFR/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
         <title>Sidus - Mon site</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
@@ -51,23 +51,23 @@
 </li>
                                         
 <li>
-    <a href="../../Accueil/Actualites/" class="dropdown-item">Actualités PSMN</a>
+    <a href="../Actualites/" class="dropdown-item">Actualités PSMN</a>
 </li>
                                         
 <li>
-    <a href="../../Accueil/Bureau/" class="dropdown-item">Bureau des Correspondants</a>
+    <a href="../Bureau/" class="dropdown-item">Bureau des Correspondants</a>
 </li>
                                         
 <li>
-    <a href="../../Accueil/Evenements/" class="dropdown-item">Evènements CBP</a>
+    <a href="../Evenements/" class="dropdown-item">Evènements CBP</a>
 </li>
                                         
 <li>
-    <a href="../../Accueil/Liens/" class="dropdown-item">Liens</a>
+    <a href="../Liens/" class="dropdown-item">Liens</a>
 </li>
                                         
 <li>
-    <a href="../../Accueil/Services/" class="dropdown-item">Services</a>
+    <a href="../Services/" class="dropdown-item">Services</a>
 </li>
                                         
   <li class="nav-item dropend">
@@ -76,23 +76,23 @@
       <ul>
             
 <li>
-    <a href="../../Accueil/Laboratoires/ENS/" class="dropdown-item">Les laboratoires ENS Lyon</a>
+    <a href="../Laboratoires/ENS/" class="dropdown-item">Les laboratoires ENS Lyon</a>
 </li>
             
 <li>
-    <a href="../../Accueil/Laboratoires/Udl/" class="dropdown-item">Les laboratoires Udl</a>
+    <a href="../Laboratoires/Udl/" class="dropdown-item">Les laboratoires Udl</a>
 </li>
             
 <li>
-    <a href="../../Accueil/Laboratoires/AURA/" class="dropdown-item">Les laboratoires région AURA</a>
+    <a href="../Laboratoires/AURA/" class="dropdown-item">Les laboratoires région AURA</a>
 </li>
             
 <li>
-    <a href="../../Accueil/Laboratoires/CdC/" class="dropdown-item">Les Centres de Calculs</a>
+    <a href="../Laboratoires/CdC/" class="dropdown-item">Les Centres de Calculs</a>
 </li>
             
 <li>
-    <a href="../../Accueil/Laboratoires/PP/" class="dropdown-item">Les partenaires privés</a>
+    <a href="../Laboratoires/PP/" class="dropdown-item">Les partenaires privés</a>
 </li>
       </ul>
     </div> 
@@ -263,23 +263,23 @@
                                   <ul>
                                         
 <li>
-    <a href="../Publications2024/" class="dropdown-item">Publications</a>
+    <a href="../../Science/Publications2024/" class="dropdown-item">Publications</a>
 </li>
                                         
 <li>
-    <a href="../Theses/" class="dropdown-item">Thèses</a>
+    <a href="../../Science/Theses/" class="dropdown-item">Thèses</a>
 </li>
                                         
 <li>
-    <a href="../CreationsMulti/" class="dropdown-item">Créations multimédia</a>
+    <a href="../../Science/CreationsMulti/" class="dropdown-item">Créations multimédia</a>
 </li>
                                         
 <li>
-    <a href="../Chercheurs/" class="dropdown-item">Chercheurs associés</a>
+    <a href="../../Science/Chercheurs/" class="dropdown-item">Chercheurs associés</a>
 </li>
                                         
 <li>
-    <a href="../Projets/" class="dropdown-item">Projets scientifiques + Projets utilisateurs</a>
+    <a href="../../Science/Projets/" class="dropdown-item">Projets scientifiques + Projets utilisateurs</a>
 </li>
                                     </ul>
                                 </div>
@@ -419,7 +419,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../../Accueil/Actualites/" class="nav-link">
+                                <a rel="next" href="../Actualites/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -466,13 +466,13 @@
 <p>Quelques erreurs se sont glissées dans l' <a href="http://www.linuxjournal.com/content/november-2013-issue-linux-journal-system-administration">article</a> de Linux Journal de novembre 2013 sur SIDUS.</p>
 <p>Si vous suivez pas à pas la <a href="#">documentation complète</a> de SIDUS, ces erreurs sont corrigées.</p>
 <h2 id="next-server-page-102">'Next-Server' page 102</h2>
-<p>Page 102, il est proposé comme adresse de serveur TFTP ''172.16.20.251''. Elle est incohérente avec le reste de l'article.</p>
-<p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le ''next-server'', dans ''/etc/dhcp/dhcpd.conf'' est à remplacer comme suit : </p>
+<p>Page 102, il est proposé comme adresse de serveur TFTP <code>172.16.20.251</code>. Elle est incohérente avec le reste de l'article.</p>
+<p>Comme nous plaçons le serveur TFTP sur le même serveur que le serveur NFSroot, la ligne avec le <code>next-server</code>, dans <code>/etc/dhcp/dhcpd.conf</code> est à remplacer comme suit : </p>
 <div class="highlight"><pre><span></span><code>next-server 10.13.20.13;
 </code></pre></div>
 <h2 id="myinclude-myexclude-page-104">MyInclude &amp; MyExclude page 104</h2>
-<p>Page 104, il est proposé d'utiliser les variables ''MyInclude'' et ''MyExclude'' pour installer dès le <a href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets. </p>
-<p>Certains sont installés "de base" par ''debootstrap''. SIDUS exige le noyau (''linux-image-3.2.0-4-amd64'' pour architecture AMD64) et les outils initrd (''initramfs-tools''). D'autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
+<p>Page 104, il est proposé d'utiliser les variables <code>MyInclude</code> et <code>MyExclude</code> pour installer dès le <a href="https://wiki.debian.org/Debootstrap">debootstrap</a> un certain nombre de paquets. </p>
+<p>Certains sont installés "de base" par <code>debootstrap</code>. SIDUS exige le noyau (<code>linux-image-3.2.0-4-amd64</code> pour architecture AMD64) et les outils initrd (<code>initramfs-tools</code>). D'autres sont bien utiles pour reconnaître un maximum de périphériques au démarrage (firmware) ou encore pour toute investigation interne.</p>
 <p>Voici ce que nous proposons pour MyInclude :</p>
 <div class="highlight"><pre><span></span><code>export MyInclude=&quot;adduser,apt,apt-utils,aptitude,aptitude-common,aspell,aspell-en,aufs-tools,bsdmainutils,btrfs-tools,busybox,ca-certificates,clusterssh,console-setup,cpio,cron,cups-pdf,debian-archive-keyring,dmidecode,dselect,emacs,environment-modules,ethtool,firmware-bnx2,firmware-linux,firmware-linux-nonfree,gnupg,gpgv,groff-base,htop,hwinfo,hwloc,iftop,ifupdown,info,initramfs-tools,install-info,iotop,iperf,ipmitool,iproute,iptables,iputils-ping,isc-dhcp-client,isc-dhcp-common,kmod,ldap-utils,less,libapt-inst1.5,libapt-pkg4.12,libboost-iostreams1.49.0,libcwidget3,libept1.4.12,libgcrypt11,libgdbm3,libgnutls26,libgpg-error0,libidn11,libkmod2,libncursesw5,libnet-ldap-perl,libnewt0.52,libnfnetlink0,libnss-ldap,libp11-kit0,libpam-ldap,libpipeline1,libpopt0,libprocps0,libreadline6,libsigc++-2.0-0c2a,libsqlite3-0,libssl1.0.0,libstdc++6,libtasn1-3,libudev0,libusb-0.1-4,libxapian22,linux-headers-3.2.0-4-amd64,linux-image-3.2.0-4-amd64,locales,logrotate,lsof,man-db,manpages,mbw,mtr,mutt,nano,net-tools,netbase,netcat-traditional,nfs-common,nscd,ntpdate,open-iscsi,openssh-server,pciutils,procps,python-ldap,readline-common,rsyslog,screen,scsitools,sdparm,ssh,ssmtp,sudo,tasksel,tasksel-data,tmux,traceroute,tshark,udev,usbutils,vim,wget,whiptail,xinit,python-html2text&quot;
 </code></pre></div>
@@ -484,13 +484,13 @@
 <p>Page 104, il est proposé de supprimer après l'installation complète le <em>hook</em> <code>${SIDUS}/usr/sbin/policy-rc.d</code>. </p>
 <p>Il peut être utile de le conserver pour éviter qu'à l'installation d'un nouveau service, l'installeur ne le démarre pas.</p>
 <h2 id="rootaufs-page-106">'rootaufs' page 106</h2>
-<p>Page 106, le 'wget' proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le ''initrd'' est incomplet. De plus, le mettre exécutable est un plus !</p>
+<p>Page 106, le 'wget' proposé pour télécharger et installer <em>coeur</em> de démarrage de SIDUS dans le <code>initrd</code> est incomplet. De plus, le mettre exécutable est un plus !</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="highlight"><pre><span></span><code>wget -O ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs http://www.cbp.ens-lyon.fr/sidus/rootaufs
 chmod 755 ${SIDUS}/etc/initramfs-tools/scripts/init-bottom/rootaufs
 </code></pre></div>
 <h2 id="vmlinux-sidus-et-initrd-sidus-page-107">'vmlinux-Sidus' et 'initrd-Sidus' page 107</h2>
-<p>Page 107, il y a une référence à ''vmlinux-Sidus'' et ''initrd-Sidus'' pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du ''/srv/tftp/pxelinux.cfg/default''.</p>
+<p>Page 107, il y a une référence à <code>vmlinux-Sidus</code> et <code>initrd-Sidus</code> pour copier le noyau et le initrd dans le dossier du serveur TFTP. Les fichiers destinations sont incohérents avec la définition du <code>/srv/tftp/pxelinux.cfg/default</code>.</p>
 <p>Il faut remplacer cette ligne par :</p>
 <div class="highlight"><pre><span></span><code>cp ${SIDUS}/vmlinuz /srv/tftp/vmlinuz-Sidus
 cp ${SIDUS}/srv/nfsroot/boot/initrd /srv/tftp/initrd.img-Sidus
