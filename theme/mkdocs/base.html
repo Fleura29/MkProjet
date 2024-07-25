@@ -97,7 +97,7 @@
                         {%- for nav_item in nav %}
                         {%- if nav_item.children %}
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle{% if nav_item.active %} active" aria-current="page{% endif %}" role="button">{{ nav_item.title }}</a>
+                                <a href="#" class="nav-link dropdown-toggle{% if nav_item.active %} active" aria-current="page{% endif %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ nav_item.title }}</a>
                                 <div class="dropdown-menu">
                                   <ul>
                                     {%- for nav_item in nav_item.children %}
@@ -178,7 +178,7 @@
                       {%- endblock %}
                       {%- if config.theme.user_color_mode_toggle %}
                             <li class="nav-item dropdown">
-                              <button id="theme-menu" aria-expanded="false" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle">
+                              <button id="theme-menu" data-bs-display="static" aria-label="Toggle theme" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-circle-half-stroke fa-fw"></i>
                                 <span class="d-lg-none ms-2">Toggle theme</span>
                               </button>
@@ -215,7 +215,7 @@
         <script src="{{ 'js/darkmode.js'|url }}"></script>
         {%- endif %}
 
-        <div class="container contenu">
+        <div id="contenu" class="container contenu">
             <div class="row">
                 {%- block content %}
                     <div class="container" role="main">{% include "content.html" %}</div>

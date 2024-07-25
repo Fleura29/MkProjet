@@ -67,7 +67,7 @@ nav:
     - Thèses: Science/Theses.md
     - Créations multimédia: Science/CreationsMulti.md
     - Chercheurs associés: Science/Chercheurs.md
-    - Projets scientifiques + Projets utilisateurs: Science/Projets.md
+    - Projets scientifiques + utilisateurs: Science/Projets.md
   - Animation:
     - Evènements scientifiques: Animation/EvenementsScient.md
     - Services proposés aux organisateurs: Animation/Services.md
@@ -92,7 +92,7 @@ nav:
   - Contacts:
     - Accès aux sites: Contacts/Acces.md
     - Équipe / Staff: Contacts/Equipe.md
-    - Calendrier & réservations de la salle TP: Contacts/Calendrier.md
+    - Calendrier de la salle TP: Contacts/Calendrier.md
     - Formulaires: Contacts/Formulaires.md
 
 markdown_extensions:
