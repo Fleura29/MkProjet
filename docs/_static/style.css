@@ -49,12 +49,6 @@ body{
     }
 }
 
-@media screen and (min-width: 576px){
-    footer{
-        width: 85%;
-    }
-}
-
 @media (min-width: 1700px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
         max-width: 1620px;
@@ -92,15 +86,15 @@ img.logo{
     --bs-navbar-color:#212529;
 }
 
-@media screen and (min-width:992px) and (max-width:1266px){
+@media screen and (min-width:992px) and (max-width:1200px){
     .navbar-nav > .dropdown:first-child:hover > .dropdown-menu,
     .navbar-nav > .dropdown:first-child .dropdown-menu.show {
-        left: 180% !important; 
+        left: 70% !important; 
         transform: translateX(-50%);
     }
 }
 
-@media screen and (min-width:1267px) and (max-width:1400px){
+@media screen and (min-width:1200px) and (max-width:1400px){
     .navbar-nav > .dropdown:first-child:hover > .dropdown-menu,
     .navbar-nav > .dropdown:first-child .dropdown-menu.show {
         left: 140% !important; 
@@ -369,6 +363,12 @@ th, td{
 footer{
     background-color: #212529;
     border: 1px solid #fff;
+}
+
+@media screen and (min-width: 576px){
+    footer{
+        width: 85%;
+    }
 }
 
 /*---------- Autres ----------*/

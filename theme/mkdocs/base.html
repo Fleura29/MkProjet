@@ -223,7 +223,7 @@
             </div>
         </div>
         <div class="orange-border right"></div>
-        <footer class="container-footer text-white">
+        <footer class="text-white mx-auto">
           {%- block footer %}
             {% include "footer.html" %}
             {%- if config.copyright %}
@@ -240,6 +240,7 @@
                 shortcuts = {{ config.theme.shortcuts|tojson }};
         </script>
         <script src="{{ 'js/base.js'|url }}"></script>
+        <script src="{{ nav.homepage.url|url }}/_static/mobileDetect.js"></script>
         <script src="{{ nav.homepage.url|url }}/_static/main.js"></script>
         {%- for script in config.extra_javascript %}
         {{ script|script_tag }}

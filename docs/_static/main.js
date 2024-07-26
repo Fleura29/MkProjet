@@ -1,16 +1,18 @@
 const contenu = document.querySelector("#contenu");
 const li = document.querySelectorAll("li.nav-item.dropdown");
 
-if (window.matchMedia("(min-width: 992px)").matches) {
-    li.forEach((o) => {
-        o.addEventListener("mouseenter", () => {
-            contenu.style.opacity = "0.5"; 
-        });
-        o.addEventListener("mouseleave", () => {
-            contenu.style.opacity = "1"; 
-        });
+/* Gestion de l'opacité du contenu */
+
+li.forEach((o) => {
+    o.addEventListener("mouseenter", () => {
+        contenu.style.opacity = "0.5"; 
     });
-}
+    o.addEventListener("mouseleave", () => {
+        contenu.style.opacity = "1"; 
+    });
+});
+
+/* Pour les formulaires */
 
 let horaires= [
     "09:00",
@@ -199,6 +201,9 @@ document.addEventListener('DOMContentLoaded', function() {
         StatutAdmin();
     }
 });
+
+/* Pour que les sous-menus puissent s'ouvrir en cliquant */
+
 document.addEventListener('DOMContentLoaded', function() {
     var dropdowns_menu = document.querySelectorAll('.dropdown-menu');
 
@@ -214,46 +219,56 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+/* Sur ordinateur pour que lorsqu'on clique sur un menu, il se ferme quand on en sort */
+
 document.addEventListener('DOMContentLoaded', function() {
-    var navItemsDropdown = document.querySelectorAll('.nav-item.dropdown');
-    var navItemsDropend = document.querySelectorAll('.nav-item.dropend');
 
-    navItemsDropdown.forEach(function(navItem) {
-        gestionDrop(navItem, navItemsDropdown);
-    });
+    var md = new MobileDetect(window.navigator.userAgent);
 
-    navItemsDropend.forEach(function(navItem) {
-        gestionDrop(navItem, navItemsDropend);
-    });
+    if (!md.tablet() && !md.mobile()) {
+        
+        var navItemsDropdown = document.querySelectorAll('.nav-item.dropdown');
+        var navItemsDropend = document.querySelectorAll('.nav-item.dropend');
 
-    function gestionDrop(navItem, nav) {
-        var dropdown_menu = navItem.querySelector('.dropdown-menu');
+        navItemsDropdown.forEach(function(navItem) {
+            gestionDrop(navItem, navItemsDropdown);
+        });
 
-        if (dropdown_menu) {
-            navItem.addEventListener('mouseleave', function() {
-                    closeAll(nav);
-            });
+        navItemsDropend.forEach(function(navItem) {
+            gestionDrop(navItem, navItemsDropend);
+        });
 
-            dropdown_menu.addEventListener('mouseleave', function() {
-                    closeAll(nav);
-            });
-            
-            navItem.addEventListener('click', function(event) {
-                event.stopPropagation();
-                closeAll(nav); // Fermer tous les menus avant d'ouvrir le nouveau
-                dropdown_menu.classList.toggle('show');
-                dropdown_menu.setAttribute("aria-expanded", dropdown_menu.classList.contains('show'));
+        function gestionDrop(navItem, nav) {
+            var dropdown_menu = navItem.querySelector('.dropdown-menu');
+            var dropdown_toggle = navItem.querySelector('.dropdown-toggle');
+
+            if (dropdown_menu) {
+                navItem.addEventListener('mouseleave', function() {
+                        closeAll(nav);
+                });
+
+                dropdown_menu.addEventListener('mouseleave', function() {
+                        closeAll(nav);
+                });
+                
+                navItem.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    closeAll(nav); // Fermer tous les menus avant d'ouvrir le nouveau
+                    dropdown_toggle.classList.toggle('show');
+                    dropdown_menu.classList.toggle('show');
+                    dropdown_menu.setAttribute("aria-expanded", dropdown_menu.classList.contains('show'));
+                });
+            }
+        }
+
+        function closeAll(drop) {
+            drop.forEach(function(navItem) {
+                var dropdown_menu = navItem.querySelector('.dropdown-menu');
+                if (dropdown_menu) {
+                    dropdown_menu.classList.remove('show');
+                    dropdown_menu.setAttribute("aria-expanded", false);
+                }
             });
         }
-    }
-
-    function closeAll(drop) {
-        drop.forEach(function(navItem) {
-            var dropdown_menu = navItem.querySelector('.dropdown-menu');
-            if (dropdown_menu) {
-                dropdown_menu.classList.remove('show');
-                dropdown_menu.setAttribute("aria-expanded", false);
-            }
-        });
     }
 });
