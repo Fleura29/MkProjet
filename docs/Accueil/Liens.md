@@ -28,9 +28,9 @@ Centres de calcul
 Laboratoires
 ------------
 
-![Lyon](../../_static/Liens.jpg){.img-float .pe-2}
+![Lyon](../_static/Liens.jpg){.img-float .pe-2}
 
-La région Rhône-Alpes est le 2e pôle français de R&D. L'aglomération lyonnaise à elle seule compte 120 000 étudiants (dont 15 000 en 3e cycle), plus de 300 laboratoires de recherche publique et 7 sites scientifiques et technologiques, cinq pôles de compétitivité dont un pôle "mondial", Lyon BioPôle, et un pôle "à vocation mondiale", AXELERA. Le Pôle Universitaire de Lyon (PUL) regroupe 16 établissements (dont l’Université Claude Bernard Lyon 1, l’Ecole Normale Supérieure de Lyon, l’Ecole Centrale de Lyon, l’INSA de Lyon et l' Institut Polytechnique de Lyon comprenant le CPE Lyon, l’ECAM Lyon, l'ISARA Lyon et l'ITECH Lyon). L’université de Lyon a identifié dans sa stratégie de recherche la modélisation et le calcul scientifiques comme une thématique forte et transverse à l’ensemble des établissements. 
+La région Rhône-Alpes est le 2e pôle français de R&D. L'aglomération lyonnaise à elle seule compte 120 000 étudiants (dont 15 000 en 3e cycle), plus de 300 laboratoires de recherche publique et 7 sites scientifiques et technologiques, cinq pôles de compétitivité dont un pôle "mondial", Lyon BioPôle, et un pôle "à vocation mondiale", AXELERA. Le Pôle Universitaire de Lyon (PUL) regroupe 16 établissements (dont l’Université Claude Bernard Lyon 1, l’Ecole Normale Supérieure de Lyon, l’Ecole Centrale de Lyon, l’INSA de Lyon et l' Institut Polytechnique de Lyon comprenant le CPE Lyon, l’ECAM Lyon, l'ISARA Lyon et l'ITECH Lyon). L’université de Lyon a identifié dans sa stratégie de recherche la modélisation et le calcul scientifiques comme une thématique forte et transverse à l’ensemble des établissements. <br> <br>
 
 * [Institut Camile Jordan](http://math.univ-lyon1.fr/)
 * [Laboratoire de Physique de la Matière Condensée et Nanostructure](http://www-lpmcn.univ-lyon1.fr/site/)

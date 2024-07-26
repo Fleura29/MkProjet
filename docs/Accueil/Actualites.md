@@ -49,6 +49,6 @@ Participations / Inscriptions : [Suggérer une question ou un thème pour le caf
 PRACE Training Portal
 ---------------------
 
-**Have you seen the PRACE Training Portal yet?** [Check it out !](<http://www.training.prace-ri.eu/)
+**Have you seen the PRACE Training Portal yet?** [Check it out !](http://www.training.prace-ri.eu/)
 
 Upcoming and current training events by PRACE Advanced Training Centres
